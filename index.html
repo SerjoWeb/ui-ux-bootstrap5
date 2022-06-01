@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Индивидуальное обучение программированию | Хекслет</title>
+
+  <link
+    rel="shortcut icon"
+    href="https://static.tildacdn.com/tild3965-3161-4631-b963-323031613533/favicon_1.ico"
+    type="image/x-icon"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  >
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+  <header class="h-50 bg-white shadow-sm py-2 px-4 bg-opacity-90 sticky-top" id="header">
+    <nav class="navbar navbar-expand-lg p-0">
+      <div class="container-fluid">
+        <a class="navbar-brand text-dark fs-4 fw-bold text-decoration-none" href="/">Хекслет</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+            <li class="nav-item"><a class="nav-link text-dark fw-normal" href="#about">О нас</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="#reviews">Отзывы</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="#price">Цены</a></li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" data-bs-toggle="modal" data-bs-target="#formModal" onclick="return false;">
+                Начать обучение
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container-fluid p-0">
+      <div class="d-flex flex-wrap justify-content-start align-items-start section-1" id="section-1">
+        <div class="w-50 overflow-hidden section-1__item" id="section-1-item-1">
+          <img src="assets/img/toto.webp" height="100%" width="100%" class="w-100 h-100" alt="toto" />
+        </div>
+
+        <div class="w-50 p-5 section-1__item" id="section-1-item-2">
+          <h1 class="fw-bold pb-4 m-0">Индивидуальное обучение программированию</h1>
+          <p class="pb-4 m-0">Освойте JavaScript, PHP, Python, Java и Rails с помощью наставника</p>
+
+          <div class="position-relative mb-4">
+            <input type="email" name="email" id="email" class="border w-100 px-4 pt-4 pl-2 pr-2 pb-2 input" />
+            <label for="email" class="position-absolute label" data-id="email">Электронная почта</label>
+          </div>
+
+          <div class="position-relative mb-4">
+            <input type="text" name="phone" id="phone" class="border w-100 px-4 pt-4 pl-2 pr-2 pb-2 input" />
+            <label for="phone" class="position-absolute label" data-id="phone">Телефон</label>
+          </div>
+
+          <div class="position-relative mb-4">
+            <input type="text" name="name" id="name" class="border w-100 px-4 pt-4 pl-2 pr-2 pb-2 input" />
+            <label for="name" class="position-absolute label" data-id="name">Имя</label>
+          </div>
+
+          <button
+            type="button"
+            class="border-0 outline-0 text-white text-center fw-bold fs-6 text-uppercase position-relative overflow-hidden shining"
+          >
+            Отправить заявку
+          </button>
+
+          <p class="small-text mt-4">
+            Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c&nbsp;
+            <a
+              href="https://ru.hexlet.io/pages/privacy?roistat_visit=2005536"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-decoration-none blue-link"
+            >политикой конфиденциальности</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid p-0" id="about">
+      <div class="d-flex flex-wrap justify-content-center align-items-start py-5 px-5 section-2">
+        <div class="pe-4 section-2__item">
+          <p>Хекслет — онлайн-школа программирования. Мы помогаем новичкам стать профессиональными разработчиками, а опытным специалистам получать новые знания и развиваться</p>
+          <p>Помогаем студентам развивать вычислительное мышление. Учим видеть проблему, а не задание, анализировать и рассуждать на уровне проблемы и выше, а не только на уровне кода</p>
+        </div>
+
+        <div class="ps-4 section-2__item">
+          <h4 class="border-top border-2 border-dark pt-4">Персональное обучение с наставником в комфортном для вас темпе</h4>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid p-0">
+      <div class="section-3 px-2">
+        <h2 class="fw-bold py-5 m-0 text-center">Доступные направления обучения</h2>
+
+        <div class="d-flex flex-wrap justify-content-center align-items-center">
+          <div class="w-25 text-center m-4">
+            <img src="assets/img/js.svg" height="100px" width="100px" alt="JavaScript" />
+            <h3 class="pt-4 text-center fw-bold">JavaScript</h3>
+          </div>
+
+          <div class="w-25 text-center m-4">
+            <img src="assets/img/php.svg" height="100px" width="100px" alt="PHP" />
+            <h3 class="pt-4 text-center fw-bold">PHP</h3>
+          </div>
+
+          <div class="w-25 text-center m-4">
+            <img src="assets/img/nodejs.svg" height="100px" width="100px" alt="NodeJS" />
+            <h3 class="pt-4 text-center fw-bold">NodeJS</h3>
+          </div>
+
+          <div class="w-25 text-center m-4">
+            <img src="assets/img/python.svg" height="100px" width="100px" alt="Python" />
+            <h3 class="pt-4 text-center fw-bold">Python</h3>
+          </div>
+
+          <div class="w-25 text-center m-4">
+            <img src="assets/img/css.svg" height="100px" width="100px" alt="Css" />
+            <h3 class="pt-4 text-center fw-bold">Вёрстка</h3>
+          </div>
+
+          <div class="w-25 text-center m-4">
+            <img src="assets/img/ruby.webp" height="100px" width="100px" alt="Ruby on Rails" />
+            <h3 class="pt-4 text-center fw-bold">Ruby on Rails</h3>
+          </div>
+
+          <div class="w-25 text-center m-4">
+            <img src="assets/img/java.webp" height="100px" width="100px" alt="Java" />
+            <h3 class="pt-4 text-center fw-bold">Java</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid p-0">
+      <div class="d-flex flex-wrap justify-content-between align-items-center py-5 px-5 section-4">
+        <div class="w-50 pe-2 section-4__item">
+          <h2 class="fw-bold pb-4 m-0">Наставник</h2>
+          <p>Наставник — опытный программист, который добился успехов в профессии, а теперь делится знаниями и опытом со студентами</p>
+          <p>Он помогает планировать обучение, осваивать теорию и писать код. Если возникли проблемы, наставник подскажет, как их можно решить</p>
+          <p>Наставник ведет студента по практическим проектам, задает правильные вопросы и помогает разобраться с реальными задачами. Он проверяет код проектов и оценивает ваш прогресс</p>
+        </div>
+
+        <div class="w-50 ps-2 section-4__item">
+          <img src="assets/img/guys.jpg" height="100%" width="100%" class="w-100 h-100" alt="guys" />
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid p-0">
+      <div class="d-flex flex-wrap justify-content-center align-items-start pb-2 px-5 section-5">
+        <div class="pe-4 section-5__item">
+          <div class="d-flex flex-wrap justify-content-start align-items-start">
+            <i class="fa-solid fa-circle-check"></i>
+
+            <div class="section-5__item__info">
+              <h4 class="fw-bold">Парное программирование с наставником</h4>
+              <p>Программируйте параллельно вместе с наставником, работая над единой задачей. Задавайте вопросы, обсуждайте решения, ищите альтернативные подходы, в режиме онлайн получайте обратную связь и рекомендации</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pe-4 section-5__item">
+          <div class="d-flex flex-wrap justify-content-start align-items-start">
+            <i class="fa-solid fa-circle-check"></i>
+
+            <div class="section-5__item__info">
+              <h4 class="fw-bold">Помощь наставника</h4>
+              <p>Не просто передаёт опыт и знания, но формирует правильное отношение к обучению, помогает понять свои сильные и слабые стороны, отслеживает ваш прогресс, учит ставить цели, преодолевать тревоги и сомнения</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex flex-wrap justify-content-center align-items-start pb-5 px-5 section-5">
+        <div class="pe-4 section-5__item">
+          <div class="d-flex flex-wrap justify-content-start align-items-start">
+            <i class="fa-solid fa-circle-check"></i>
+
+            <div class="section-5__item__info">
+              <h4 class="fw-bold">Ревью кода от наставника</h4>
+              <p>Получайте код ревью не только в рамках прохождения проектов, но и там, где это потребуется — на любом из этапов обучения. Общее время работы с наставником — 8 часов в месяц</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pe-4 section-5__item">
+          <div class="d-flex flex-wrap justify-content-start align-items-start">
+            <i class="fa-solid fa-circle-check"></i>
+
+            <div class="section-5__item__info">
+              <h4 class="fw-bold">Индивидуальный подбор наставника</h4>
+              <p>Все наставники проходят отбор и обучение. Мы стараемся подбирать наставника индивидуально под студента, после предварительного интервью. Вы сможете поменять наставника, если не найдёте с ним общий язык</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid p-0">
+      <div class="d-flex flex-wrap justify-content-between align-items-center px-5 pb-5 section-6">
+        <div class="w-50 pe-2 section-6__item">
+          <h2 class="fw-bold pb-4 m-0">Теория</h2>
+          <p>Короткие уроки в текстовом формате помогают освоить сложную информацию, а не просто прослушать лекцию</p>
+          <p>Интерактивный тест после каждого урока нужен, чтобы проверить себя и закрепить изученное</p>
+        </div>
+
+        <div class="w-50 ps-2 section-6__item">
+          <img src="assets/img/theory.webp" height="100%" width="100%" class="w-100 h-100" alt="theory" />
+        </div>
+      </div>
+
+      <div class="d-flex flex-wrap justify-content-center align-items-center p-5 pt-0">
+        <div class="d-flex flex-wrap justify-content-center align-items-center p-5 border border-4 border-warning">
+          <h5 class="text-center fw-bold">У вас остается пожизненный доступ к теории пройденных уроков.</h5>
+          <h5 class="text-center fw-bold m-0">Мы постоянно обновляем теорию, поэтому вы сможете вернуться и актуализировать свои знания</h5>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid p-0">
+      <div class="d-flex flex-wrap justify-content-between align-items-center px-5 pb-5 section-7">
+        <div class="w-50 pe-2 section-7__item">
+          <h2 class="fw-bold pb-4 m-0">Практика</h2>
+          <p>Применяете полученные знания на практике. Вам доступны упражнения прямо в браузере с автоматизированной проверкой правильности выполнения заданий тестами и качества кода линтерами</p>
+        </div>
+
+        <div class="w-50 ps-2 section-7__item">
+          <img src="assets/img/practice.webp" height="100%" width="100%" class="w-100 h-100" alt="practice" />
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid p-0 animate__zoomIn">
+      <div class="d-flex flex-wrap justify-content-between align-items-start px-5 pb-5 section-8">
+        <div class="w-50 pe-2 section-8__item">
+          <h2 class="fw-bold pb-4 m-0">Проекты</h2>
+        </div>
+
+        <div class="w-50 ps-2 section-8__item">
+          <p>На практических проектах студенты создают реальные приложения. Это уникальный опыт самостоятельного решения задач, который делает вас на голову выше других соискателей-джуниоров. В ходе рефакторинга кода с наставником вы увидите ошибки, научитесь лучшим практикам и способам оптимизации. На выходе вы получаете качественный код и рабочее приложение, которое станет частью вашего портфолио</p>
+          <p>Выполняются на своем компьютере и лежат в открытом доступе на Github. Проверяются автоматизированно и наставником. Помогают пройти собеседования и выполнить тестовое задание</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid p-0">
+      <div class="d-flex flex-wrap justify-content-center align-items-center px-5 pb-5 section-9">
+        <div class="w-100 section-9__item">
+          <div class="grid">
+            <div>
+              <img src="assets/img/practice_slide_1.png" height="100%" width="100%" class="w-100 h-100" alt="practice" />
+            </div>
+
+            <div class="gutter-col gutter-col-1">
+              <div class="bold-devider"></div>
+            </div>
+
+            <div>
+              <img src="assets/img/practice_slide_2.png" height="100%" width="100%" class="w-100 h-100" alt="practice" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid p-0" id="reviews">
+      <div class="section-10 px-5">
+        <h2 class="fw-bold py-5 m-0 text-center">Мы помогли изменить жизнь тысячам людей</h2>
+
+        <div class="d-flex flex-wrap justify-content-center align-items-start pb-5 animate__zoomIn">
+          <div class="position-relative overflow-hidden rounded-circle section-10__item__image">
+            <img src="assets/img/ampilov.webp" height="100%" width="100%" class="w-100 h-100" alt="ampilov" />
+          </div>
+
+          <div class="bg-white py-2 px-4 rounded section-10__item__with_arrow">
+            <div class="arrow"></div>
+
+            <p class="fw-bold text-black-50 mb-0">Сергей Ампилов</p>
+            <p class="fs-5 fw-bold">О том, как выбирал где учиться</p>
+            <p>«Тогда я начал смотреть в сторону онлайн-курсов. Особо не вникая, и не теряя времени, начал скупать всё подряд. Курсы верстки HTML, CSS. Потом курсы front-end – JavaScript, React. Я проходил одновременно 2-3 курса в ускоренном режиме. Сил уходило много, а прогресс был почти нулевой. Потому что тупо повторяя за преподавателем, как оказалось, ничему научиться нельзя. Я приуныл. И однажды, листая бесконечные отзывы под очередным ютубовским роликом, обнаружил ссылку на Хекслет и несколько комментариев, что там учат хорошо. Я тем же вечером стартанул на бесплатных курсах, и через два дня купил платную подписку. Я реально залип. И, о — чудо! У меня пошел прогресс. Я наконец-то начал программировать. Сам! Хоть и на учебных задачах, хоть и очень медленно! Но дело пошло»</p>
+          </div>
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-center align-items-start pb-5 animate__zoomIn">
+          <div class="w-100 bg-white py-2 px-4 rounded">
+            <p class="fw-bold text-black-50 mb-0">Денис Солодухин</p>
+            <p class="fs-5 fw-bold">О жизни после Хекслета</p>
+            <p>«Меня повысили на работе. Мне 40 лет. У меня двое маленьких детей. Есть первая работа в жизни, которая мне настолько нравится, что когда еду домой, то, бывает, проезжаю остановку, потому что меня прёт от новой задачи. Понимаю, мой апгрейд стал возможен благодаря ребятам из Хекслета, которые грамотно организовали, настроили и реализовали пожалуй лучшую систему обучения. Что очень важно, ребята не останавливаются на достигнутом. Даже в 40 лет можно реализовать казалось бы невозможное: изучить программирование с нуля и устроиться на работу»</p>
+          </div>
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-center align-items-start pb-5 animate__zoomIn">
+          <div class="position-relative overflow-hidden rounded-circle section-10__item__image">
+            <img src="assets/img/bykov.webp" height="100%" width="100%" class="w-100 h-100" alt="bykov" />
+          </div>
+
+          <div class="bg-white py-2 px-4 rounded section-10__item__with_arrow">
+            <div class="arrow"></div>
+
+            <p class="fw-bold text-black-50 mb-0">Вячеслав Быков</p>
+            <p class="fs-5 fw-bold">О повышении квалификации</p>
+            <p>«После Хекслета собеседования на Middle Frontend разработчика были только в радость. Ты просто рассказываешь всё, о чем читал на протяжении полугода, и делишься опытом с проектов. Тестовых заданий уж точно бояться не стоит, здесь я делал вещи и посложнее. Всего прошел шесть собеседований, после которых получил пять офферов. Дальше выбирал по принципу более интересного стека и команды, в одиночку работать я уж точно теперь не хочу. Ну и, конечно, приятный бонус: зарплаты у мидлов гораздо интересней, а зона ответственности меньше, чему у фулстека-самоучки ;)»</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid p-0" id="price">
+      <div class="section-11 px-5 pb-5 bg-white">
+        <h2 class="fw-bold py-5 m-0 text-center">В стоимость обучения включены</h2>
+
+        <div class="d-flex flex-wrap justify-content-center align-items-start pb-5 section-11__list">
+          <div class="pe-4 section-11__list__item">
+            <div class="d-flex flex-wrap justify-content-start align-items-center">
+              <i class="fa-solid fa-circle-check"></i>
+
+              <div class="section-11__list__item__info">
+                <h4 class="fw-bold">Помощь персонального наставника</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="pe-4 section-11__list__item">
+            <div class="d-flex flex-wrap justify-content-start align-items-center">
+              <i class="fa-solid fa-circle-check"></i>
+
+              <div class="section-11__list__item__info">
+                <h4 class="fw-bold">Практические проекты в портфолио</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-center align-items-start pb-5 section-11__list">
+          <div class="pe-4 section-11__list__item">
+            <div class="d-flex flex-wrap justify-content-start align-items-center">
+              <i class="fa-solid fa-circle-check"></i>
+
+              <div class="section-11__list__item__info">
+                <h4 class="fw-bold">Пожизненный доступ к теории пройденных уроков</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="pe-4 section-11__list__item">
+            <div class="d-flex flex-wrap justify-content-start align-items-center">
+              <i class="fa-solid fa-circle-check"></i>
+
+              <div class="section-11__list__item__info">
+                <h4 class="fw-bold">Доступ к IDE-инструментам JetBrains на 6 месяцев</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center align-items-center pb-5 section-11__info_block">
+        <div class="d-flex flex-wrap justify-content-center align-items-center shadow rounded colored-block">
+          <div>
+            <p class="fs-2 text-center fw-bold">16 900 ₽</p>
+            <p class="text-center">Ежемесячный платёж</p>
+            <button
+            type="button"
+            class="border-0 outline-0 text-white text-center fw-bold fs-6 text-uppercase position-relative overflow-hidden mt-4"
+            data-bs-toggle="modal"
+            data-bs-target="#formModal"
+          >
+            Отправить заявку
+          </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid p-0">
+      <div class="d-flex justify-content-center align-items-center pb-5 section-12">
+        <div class="border border-5 border-light p-5">
+          <p class="fs-1 fw-bold text-center">Остались вопросы?</p>
+          <p class="text-center">Свяжемся с вами, ответим на вопросы и расскажем, как вы будете учиться</p>
+
+          <div class="mt-5">
+            <div class="position-relative mb-4">
+              <input type="email" name="email1" id="email1" class="border-0 border-bottom w-100 px-4 pt-4 pl-2 pr-2 pb-2 input" />
+              <label for="email1" class="position-absolute label" data-id="email1">Электронная почта</label>
+            </div>
+  
+            <div class="position-relative mb-4">
+              <input type="text" name="phone1" id="phone1" class="border-0 border-bottom w-100 px-4 pt-4 pl-2 pr-2 pb-2 input" />
+              <label for="phone1" class="position-absolute label" data-id="phone1">Телефон</label>
+            </div>
+  
+            <div class="position-relative mb-4">
+              <input type="text" name="name1" id="name1" class="border-0 border-bottom w-100 px-4 pt-4 pl-2 pr-2 pb-2 input" />
+              <label for="name1" class="position-absolute label" data-id="name1">Имя</label>
+            </div>
+  
+            <div class="text-center">
+              <button
+                type="button"
+                class="border-0 outline-0 text-white text-center fw-bold fs-6 text-uppercase position-relative overflow-hidden"
+              >
+                Отправить
+              </button>
+            </div>
+  
+            <p class="small-text mt-4 mb-0">
+              Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c&nbsp;
+              <a
+                href="https://ru.hexlet.io/pages/privacy?roistat_visit=2005536"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-decoration-none blue-link"
+              >политикой конфиденциальности</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="p-5">
+    <ul class="nav justify-content-center align-items-center">
+      <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/Hexlet/" target="_blank" rel="nofollow noopener"><i class="fa-brands fa-facebook fs-1 text-dark"></i></a></li>
+      <li class="nav-item"><a class="nav-link" href="https://twitter.com/HexletHQ" target="_blank" rel="nofollow noopener"><i class="fa-brands fa-twitter fs-1 text-dark"></i></a></li>
+      <li class="nav-item"><a class="nav-link" href="https://vk.com/hexlet" target="_blank" rel="nofollow noopener"><i class="fa-brands fa-vk fs-1 text-dark"></i></a></li>
+      <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/user/HexletUniversity" target="_blank" rel="nofollow noopener"><i class="fa-brands fa-youtube fs-1 text-dark"></i></a></li>
+      <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/hexlethq/" target="_blank" rel="nofollow noopener"><i class="fa-brands fa-instagram fs-1 text-dark"></i></a></li>
+      <li class="nav-item"><a class="nav-link" href="https://t.me/hexlet_ru" target="_blank" rel="nofollow noopener"><i class="fa-brands fa-telegram fs-1 text-dark"></i></a></li>
+    </ul>
+    <p class="text-center mt-3">UMA Esplanadi<br/>Pohjoisesplanadi 39<br/>00100 HELSINKI</p>
+  </footer>
+
+  <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-5">
+          <p class="text-center pb-4">Свяжемся с вами, ответим на вопросы и расскажем, как вы будете учиться</p>
+
+          <div class="position-relative mb-4">
+            <input type="email" name="email2" id="email2" class="border w-100 px-4 pt-4 pl-2 pr-2 pb-2 input" />
+            <label for="email2" class="position-absolute label" data-id="email2">Электронная почта</label>
+          </div>
+
+          <div class="position-relative mb-4">
+            <input type="text" name="phone2" id="phone2" class="border w-100 px-4 pt-4 pl-2 pr-2 pb-2 input" />
+            <label for="phone2" class="position-absolute label" data-id="phone2">Телефон</label>
+          </div>
+
+          <div class="position-relative mb-4">
+            <input type="text" name="name2" id="name2" class="border w-100 px-4 pt-4 pl-2 pr-2 pb-2 input" />
+            <label for="name2" class="position-absolute label" data-id="name2">Имя</label>
+          </div>
+
+          <button
+            type="button"
+            class="w-100 border-0 outline-0 text-white text-center fw-bold fs-6 text-uppercase position-relative overflow-hidden"
+          >
+            Отправить
+          </button>
+
+          <p class="small-text mt-4">
+            Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c&nbsp;
+            <a
+              href="https://ru.hexlet.io/pages/privacy?roistat_visit=2005536"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-decoration-none blue-link"
+            >политикой конфиденциальности</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+  <script src="assets/js/all.min.js"></script>
+  <script src="https://unpkg.com/split-grid/dist/split-grid.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
